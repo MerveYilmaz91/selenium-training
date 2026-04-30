@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- DOCTYPE: Tarayıcıya bu dosyanın HTML5 olduğunu söyler -->
+
+<html lang="tr">
+<!-- html: Sayfanın tamamını saran ana etiket. lang="tr" dil bilgisi verir -->
+
+<head>
+    <!-- head: Sayfanın görünmeyen bilgileri burada. Başlık, stil, meta gibi şeyler -->
+
+    <meta charset="UTF-8">
+    <!-- meta charset: Türkçe karakterlerin (ş, ğ, ü, ö...) düzgün görünmesi için -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta viewport: Mobil cihazlarda sayfanın düzgün ölçeklenmesi için -->
+
+    <meta name="description" content="HTML ve CSS öğrenmek için hazırlanmış örnek sayfa">
+    <!-- meta description: Google gibi arama motorlarının sayfayı tanımlaması için -->
+
+    <meta name="author" content="Öğretmen">
+    <!-- meta author: Sayfanın yazarını belirtir -->
+
+    <title>HTML & CSS Ders Dosyası</title>
+    <!-- title: Tarayıcı sekmesinde görünen başlık -->
+
+    <link rel="stylesheet" href="ders.css">
+    <!-- link: Dış CSS dosyasını sayfaya bağlar. href = dosyanın yolu -->
+
+</head>
+
+<body>
+<!-- body: Kullanıcının ekranda gördüğü her şey buraya yazılır -->
+
+
+<!-- ============================================================ -->
+<!--   1. BAŞLIKLAR (Headings)                                    -->
+<!-- ============================================================ -->
+
+<h1 id="ana-baslik">Bu bir H1 Başlıktır — En büyük başlık</h1>
+<!-- h1: Sayfada yalnızca 1 tane olmalı. SEO için önemli -->
+
+<h2>Bu bir H2 Başlıktır — Bölüm başlığı</h2>
+<h3>Bu bir H3 Başlıktır — Alt bölüm başlığı</h3>
+<h4>Bu bir H4 Başlıktır</h4>
+<h5>Bu bir H5 Başlıktır</h5>
+<h6>Bu bir H6 Başlıktır — En küçük başlık</h6>
+<!-- h1'den h6'ya kadar 6 seviye başlık vardır -->
+
+
+<!-- ============================================================ -->
+<!--   2. PARAGRAF VE METİN ETİKETLERİ                           -->
+<!-- ============================================================ -->
+
+<p id="ilk-paragraf">
+    Bu bir paragraf etiketidir. İçine uzun metin yazılır.
+    HTML'de enter'a bassanız bile tarayıcıda yeni satıra geçmez,
+    bunun için br etiketi kullanılır.
+</p>
+<!-- p: Paragraf. Otomatik olarak üstte ve altta boşluk bırakır -->
+
+<p>
+    Metni <strong>kalın yapmak</strong> için strong etiketi kullanılır.
+    Metni <em>italik yapmak</em> için em etiketi kullanılır.
+    Metni <u>altı çizmek</u> için u etiketi kullanılır.
+    Metni <s>üstü çizmek</s> için s etiketi kullanılır.
+    Metni <mark>sarı highlight</mark> yapmak için mark etiketi kullanılır.
+    <small>Küçük yazı için small etiketi.</small>
+    <sub>Alt simge</sub> için sub,
+    <sup>Üst simge</sup> için sup kullanılır. (örn: x<sup>2</sup>)
+</p>
+
+<p>
+    Birinci satır.<br>
+    br etiketi ile yeni satıra geçildi. br kapanmaz, tek başına kullanılır.
+</p>
+<!-- br: Satır sonu (line break). Kapanış etiketi yoktur -->
+
+<hr>
+<!-- hr: Yatay çizgi (horizontal rule). Bölümleri ayırmak için kullanılır -->
+
+<blockquote id="alinti">
+    "Bu bir alıntı metnidir. Genellikle biraz içeriden başlar."
+    — Ünlü Biri
+</blockquote>
+<!-- blockquote: Alıntı metni. Görsel olarak içeriden başlar -->
+
+<pre>
+    Bu metin
+        olduğu gibi
+    görünür.    Boşluklar korunur.
+  </pre>
+<!-- pre: Preformatted. Yazdığınız gibi gösterir, boşlukları korur -->
+
+<code>print("Merhaba Dünya")</code>
+<!-- code: Kod parçası göstermek için. Genellikle sabit genişlikli font kullanır -->
+
+<p>
+    <abbr title="HyperText Markup Language">HTML</abbr> öğreniyoruz.
+</p>
+<!-- abbr: Kısaltmalar için. title ile açık yazılışını verebilirsiniz -->
+
+... (483 satır kaldı)

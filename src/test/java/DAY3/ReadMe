@@ -1,0 +1,32 @@
+
+Thread.sleep("x") -> x yerine milisaniye cinsinden saniye değeri yazılır.
+örn: 3000 = 3sn
+çekirdeği belirli saniye kadar uyutur.
+süre dolduktan sonra işlemler devam eder.
+
+driver.findElements() -> fonksiyonu bir web element listesini döndürür.
+List<WebElement> değişkenAdi = driver.findElements(By.name...)
+
+şeklinde kullanılır. birden fazla elementi elde tutmaya ve işlem yapmaya yarar.
+----------------
+element.getText() -> methodu elementin html içerisindeki text ini verir.
+
+2- name ile bulma
+   bir web sayfasında aynı ID den sadece 1 tane olur.
+
+   driver.findElement(By.name("x"));
+
+   kullanarak element bulunur. By dan sonra name yazılır.
+   Name attribute u html de elementlerin içerisindedir.
+
+3- class name ile bulma
+
+   driver.findElement(By.className("x"));
+   kullanarak element bulunur. By dan sonra className yazılır.
+   className attribute u html de elementlerin içerisindedir.
+
+4- link texti ile bulma
+5- linkin textinin bir parçası ile bulma
+6- tag ile bulma
+7- css selector
+8- xpath
