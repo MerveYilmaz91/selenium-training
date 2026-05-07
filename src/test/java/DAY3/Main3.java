@@ -12,8 +12,11 @@ public class Main3 {
 
         driver.get("https://demoqa.com/links");
 
+        Thread.sleep(2000);
 
+        WebElement element = driver.findElement(By.linkText("Not Found"));
 
+        element.click();
 
         Thread.sleep(3000);
         driver.quit();

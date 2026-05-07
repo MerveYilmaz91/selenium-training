@@ -11,6 +11,14 @@ List<WebElement> değişkenAdi = driver.findElements(By.name...)
 ----------------
 element.getText() -> methodu elementin html içerisindeki text ini verir.
 
+----------------------------
+
+NoSuchElementException hatası elementin bulunmadığı ("fmöfffç") anlamına geliyor.
+
+------------------
+
+Element.getAttribute -> elementin verilen attribute taki değerini döndürür.
+
 2- name ile bulma
    bir web sayfasında aynı ID den sadece 1 tane olur.
 
@@ -26,7 +34,22 @@ element.getText() -> methodu elementin html içerisindeki text ini verir.
    className attribute u html de elementlerin içerisindedir.
 
 4- link texti ile bulma
+
+driver.findElements(By.linkText("x"))
+
+linkText bir a etiketli elementin textini kullanarak, elementi bulmamızı sağlar
+----------------------------------------
 5- linkin textinin bir parçası ile bulma
+
+driver.findElements(By.partialLinkText("x"))
+
+partialLinkText bir a etiketli elementin textinin bir kısmını kullanarak, elementi bulmamızı sağlar
+
+-----------------------------------------
 6- tag ile bulma
+
+elementin tag ini kullanarak driver a tanımlamaya yarar.
+-----------------------------------------
+
 7- css selector
 8- xpath
