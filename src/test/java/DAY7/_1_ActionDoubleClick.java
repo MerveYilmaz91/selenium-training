@@ -1,11 +1,12 @@
 package DAY7;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 
 import static Utility.BaseDriver.driver;
 
 public class _1_ActionDoubleClick {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException{
 
         // .doubleClick() elemente çift tıklamaya yarar.
 
@@ -18,5 +19,4 @@ public class _1_ActionDoubleClick {
     }
 }
 
-    }
-}
+
