@@ -1,9 +1,12 @@
 package DAY9.SeleniumWaits;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import java.time.Duration;
 
 import static Utility.BaseDriver.driver;
-
 
 public class _02_WaitsIntro {
     public static void main(String[] args) throws InterruptedException {
@@ -13,11 +16,14 @@ public class _02_WaitsIntro {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
          */
 
+        /*
         driver.get("https://www.lcw.com/");
 
         driver.findElement(By.cssSelector("span.ins-web-opt-in-reminder-close-button")).click();
 
-        driver.findElement(By.id("search-forminput-fieldsearch-input")).sendKeys("Siyah Tişört");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        driver.findElement(By.cssSelector("#search-forminput-field")).sendKeys("Siyah Tişört");
         driver.findElement(By.cssSelector("button.search-forminput-fieldbtn-search")).click();
 
 
@@ -29,6 +35,8 @@ public class _02_WaitsIntro {
         System.out.println(driver.findElement(By.id("radix-4")).getText());
 
         driver.quit();
+        */
+
 
     }
 }
